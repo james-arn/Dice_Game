@@ -1,5 +1,6 @@
 //define varables
 const startAgain = document.getElementById("startAgain");
+startAgain.style.visibility='hidden';
 const mainText = document.getElementById("mainText");
 let totalScoreDisplay = document.getElementById("totalScore");
 let diceImage = document.getElementById("diceImage");
@@ -16,7 +17,6 @@ case 1:
     mySum += 1
     diceImage.src="img/Dice 1.svg"
     totalScoreDisplay.innerText = mySum
-
         break; 
 case 2: 
     mySum += 2
@@ -45,14 +45,16 @@ case 6:
         break;
 }
 if (mySum > 20) { 
-    mainText.innerText = "Winner!"
+    mainText.innerText = "Winner!";
+    rollButton.style.display = "none";
+    startAgain.style.visibility='visible';
     
  } else if (oneRoll == 1) { 
     mainText.innerText = "You Lose!"
+    rollButton.style.display = "none";
+    startAgain.style.visibility='visible';
     }
 });
-
-
 
 //need a random number generator, per click, in an if statement that adds up, but if "1" roll, says you lose. And once reached 20 displays "you win".
 
