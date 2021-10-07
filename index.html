@@ -7,18 +7,22 @@
     <title>Dice Game - 1 Player</title>
   </head>
   <body>
-    <section>
-      <button id="startAgain" onClick="window.location.reload();" >Start Again</button>
-    </section>
-    <section class="text">
-      <h1 id="mainText">Player 1</h1>
-      <h1 id="totalScore">0</h1>
-    </section>
-    <section>
-      <img id="diceImage" src="img/Dice 1.svg" />
-    </section>
-    <section>
-        <button id="rollButton">Roll</button>
+    <section class="container">
+      <section>
+        <button id="startAgain" class="button" onClick="window.location.reload();">
+          Start Again
+        </button>
+      </section>
+      <section class="text">
+        <h1 id="mainText">Player 1</h1>
+        <h1 id="totalScore" style="text-align:center">0</h1>
+      </section>
+      <section>
+        <img id="diceImage" src="img/Dice 1.svg" />
+      </section>
+      <section>
+        <button id="rollButton" class="button">Roll</button>
+      </section>
     </section>
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>

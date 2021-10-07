@@ -9,7 +9,9 @@ let rollButton = document.getElementById("rollButton");
 // Set up a running total to display in total score
 let mySum = 0 
 
-//ROLL BUTTON - Assign a value to one roll, changing image on dice.
+//MAIN FUNCTIONALITY - Assign a random value to one roll, conditional statement 
+//inc. running total & changing image on dice.
+
 rollButton.addEventListener("click", function () {
  let oneRoll = Math.floor(Math.random() * (6 - 1 + 1)) + 1;
  switch (oneRoll) {
@@ -44,6 +46,7 @@ case 6:
     totalScoreDisplay.innerText = mySum
         break;
 }
+// within funciton doing game win/lose conditions: 
 if (mySum > 20) { 
     mainText.innerText = "Winner!";
     rollButton.style.display = "none";
@@ -55,10 +58,3 @@ if (mySum > 20) {
     startAgain.style.visibility='visible';
     }
 });
-
-//need a random number generator, per click, in an if statement that adds up, but if "1" roll, says you lose. And once reached 20 displays "you win".
-
-
-//When you hit '1', you lose
-
-//but once you pass '20', you win
