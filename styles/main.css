@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
 
 html { 
   background: url(https://www.takeagamble.co.uk/wp-content/uploads/2018/02/casino-background-footer-2.jpg) no-repeat center center fixed; 
@@ -7,11 +8,12 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  font-family: "Luckiest Guy", cursive;
+  font-weight: initial;
 }
 
 h1 {
   color: white;
-  font-family: "Luckiest Guy", cursive;
   font-size: 60px;
   letter-spacing: 5px;
   align-items: center;
@@ -29,7 +31,7 @@ h1 {
 }
 
 .button {
-  font-family: "font-family: 'Bree Serif', serif";
+  font-family: 'Roboto', sans-serif;
   font-size: 30px;
   padding: 25px;
   border-radius: 50%;
