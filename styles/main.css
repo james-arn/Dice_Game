@@ -17,6 +17,10 @@ h1 {
   margin: 10px;
 }
 
+#mainText {
+  margin-top: 30px;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -31,7 +35,7 @@ h1 {
   color: black;
   transition-duration: 0.4s;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-  margin: 20px;
+  margin-top: 20px;
 }
 
 .button:hover {
@@ -40,7 +44,6 @@ h1 {
 }
 
 @media (max-width:540px) {
-    .box{
+    .container{
         padding: 5px 25px 5px 25px;
     }
-    

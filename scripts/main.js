@@ -1,6 +1,6 @@
 //define varables
 const startAgain = document.getElementById("startAgain");
-startAgain.style.visibility='hidden';
+startAgain.style.display='none';
 const mainText = document.getElementById("mainText");
 let totalScoreDisplay = document.getElementById("totalScore");
 let diceImage = document.getElementById("diceImage");
@@ -50,11 +50,10 @@ case 6:
 if (mySum > 20) { 
     mainText.innerText = "Winner!";
     rollButton.style.display = "none";
-    startAgain.style.visibility='visible';
+    startAgain.style.display='block';
     
  } else if (oneRoll == 1) { 
     mainText.innerText = "You Lose!"
     rollButton.style.display = "none";
-    startAgain.style.visibility='visible';
-    }
+    startAgain.style.display='block';    }
 });
